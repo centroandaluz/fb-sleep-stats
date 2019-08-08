@@ -35,14 +35,14 @@ Actualice los siguientes valores en `config/development.json`
  - "xs": [valor xs de la cookie de Facebook] (https://gist.github.com/sqren/0e4563f258c9e85e4ae1)
  - "appId": [Id. de la aplicación de Facebook] (https://gist.github.com/sqren/1ac0f5d316fcbd46d8c1)
 
-* ¡Asegúrate de que no haya pestañas o espacios finales en el archivo de configuración! *
+*¡Asegúrate de que no haya pestañas o espacios finales en el archivo de configuración!*
 
-** Instalar dependencias **
+**Instalar dependencias**
 ```
 npm install
 ```
 
-** Construir dependencias del navegador **
+**Construir dependencias del navegador**
 ```
 npm run webpack
 ```
@@ -51,23 +51,23 @@ npm run webpack
 
 Debe tener dos procesos ejecutándose simultáneamente: el raspador y el servidor web. Por lo tanto, debe ejecutar los siguientes dos comandos en ventanas / pestañas separadas.
 
-** Comienza a raspar **
+**Comienza a raspar**
 
-* Esto se ejecutará continuamente, sondeando Facebook cada 10 minutos. Manténgalo en funcionamiento durante el tiempo que desee seguir el sueño. *
+*Esto se ejecutará continuamente, sondeando Facebook cada 10 minutos. Manténgalo en funcionamiento durante el tiempo que desee seguir el sueño.*
 ```
 npm run scrape
 ```
 
-** Iniciar servidor **
+**Iniciar servidor**
 ```
 npm start
 ```
 
-Vea el resultado en el navegador: [http: // localhost: 3000] (http: // localhost: 3000)
+Vea el resultado en el navegador: [http://localhost:3000] (http://localhost:3000)
 
 #Solución de problemas
 
-** Recibo un error al ejecutar "npm run webpack" **
+**Recibo un error al ejecutar "npm run webpack"**
 
 Intente reinstalar los módulos de nodo:
 ```
@@ -76,14 +76,14 @@ npm install
 npm run webpack
 ```
 
-** No se muestran usuarios **
+**No se muestran usuarios**
  - Si tiene un bloqueador de anuncios, debe deshabilitarlo para el sitio.
  - Necesita ejecutar `npm run scrape` y mantenerlo en funcionamiento. Cuando lo detenga, dejará de rastrear.
 
-** Los cambios en development.json no se recogen **
+**Los cambios en development.json no se recogen**
  - Tienes que ejecutar `npm run webpack`
 
-** ¿Cómo actualizo a la última versión? **
+**¿Cómo actualizo a la última versión?**
 
 Después de extraer la última versión, debe reconstruir las dependencias:
 ```
@@ -93,7 +93,7 @@ npm install
 npm run webpack
 ```
 
-** ReferenceError: la promesa no está definida **
+**ReferenceError: Promise is not defined**
 
 Actualice Node.js a la última versión estable de la rama en la que se encuentra (v5.7.1, v4.3.2 o v0.12.11). Después de eso reconstruir dependencias:
 ```
@@ -102,11 +102,11 @@ npm install
 npm run webpack
 ```
 
-** No se puede analizar el archivo de configuración **
+**No se puede analizar el archivo de configuración**
 
 Su archivo de configuración contiene un formato json no válido. Encuentre los errores utilizando una herramienta como [http://jsonlint.com/font>(http://jsonlint.com/)
 
-** ¿Dónde se almacenan los datos? **
+**¿Dónde se almacenan los datos?**
 
 Puede encontrar los datos en formato JSON aquí: `src/server/services/db.json`.
 
